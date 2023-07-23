@@ -12,12 +12,19 @@
 </head>
 
 <body>
-  <%= require('../../partials/header.html?raw') %>
-    <main>
-      <img alt="" src="../../assets/img/unicorn.jpg">
-      index1234
-    </main>
-    <%= require('../../partials/footer.html?raw') %>
+  <main>
+    <div class="container">
+      <div class="navigation-buttons text-center">
+        <button id="prevWeekBtn">Previous Week</button>
+        <button id="nextWeekBtn">Next Week</button>
+      </div>
+      <h3 id="currentMonth" class="text-center"></h3>
+      <div class="table-responsive">
+        <table id="calendar" class="table table-bordered text-center">
+        </table>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
